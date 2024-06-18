@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 20px;
   color: #fff;
   font-weight: 500;
 }
@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 .footer > img {
   height: 48px;
