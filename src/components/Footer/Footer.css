@@ -1,0 +1,25 @@
+.footer {
+  width: 100%;
+  background-color: #6278f7;
+  background-image: url('../../../public/imagens/fundo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+.footer .div-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.footer > img {
+  height: 48px;
+}
