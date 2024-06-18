@@ -6,21 +6,11 @@ import "./Form.css";
 
 export const Form = (props) => {
   
-  const times = [
-    'Programação',
-    'Front-End',
-    'Data Science',
-    'Devops',
-    'UX e Design',
-    'Mobile',
-    'Inovação e Gestão'
-  ]
-  
   const [nome, setNome] = useState('')
   const [cargo, setCargo] = useState('')
   const [imagem, setImagem] = useState('')
   const [time, setTime] = useState('')
-
+  
   const aoSalvar = (evento) => {
     evento.preventDefault()
     props.aoColaboradorCadastrado({
@@ -29,8 +19,11 @@ export const Form = (props) => {
       imagem,
       time
     })
+    setNome('')
+    setCargo('')
+    setImagem('')
+    setTime('')
   }
-  
   
   return (
     <section className="section-form">
@@ -57,10 +50,10 @@ export const Form = (props) => {
           valor={imagem}
           aoAlterado={valor => setImagem(valor)}
         />
-        <DropdownList 
-          obrigatorio={true} 
+        <DropdownList
+          obrigatorio={true}
           label="Time" 
-          itens={times} 
+          itens={props.times}
           valor={time}
           aoAlterado={valor => setTime(valor)}
         />
