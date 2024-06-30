@@ -8,7 +8,7 @@ function App() {
   
   const times = [
     {
-      nome: 'Programação',
+      nome: 'Back-End',
       corPrimaria: '#57C278',
       corSecundaria: '#D9F7E9'
     },
@@ -50,6 +50,10 @@ function App() {
     setColaboradores([...colaboradores, colaborador])
   }
   
+  const deletarColaborador = () => {
+    alert('deletando colaborador');
+  }
+  
   return (
     <div className="App">
       <Banner />      
@@ -65,6 +69,7 @@ function App() {
         corPrimaria={time.corPrimaria} 
         corSecundaria={time.corSecundaria} 
         colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+        aoDeletar={deletarColaborador}
       />
       )}
       <Footer />

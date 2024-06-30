@@ -9,6 +9,7 @@ export const DropdownList = (props) => {
         required={props.obrigatorio} 
         value={props.valor}
       >
+        <option value="">Selecione o time</option>
         {props.itens.map(item => {
           return <option key={item}>{item}</option>
                 })}
