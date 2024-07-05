@@ -1,13 +1,20 @@
 .section-form {
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 80px 0;
+  margin: 80px 50px;
 }
 
 .section-form form {
-  max-width: 80%;
   background-color: #F2F2F2;
   border-radius: 20px;
   padding: 36px 64px;
   box-shadow: 8px 8px 16px rgba(0,0,0, 0.08);
+  flex: 1;
+}
+
+.section-form h2 {
+  font-weight: 400;
+  font-size: 32px;
 }

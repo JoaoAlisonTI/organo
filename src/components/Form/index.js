@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { Input } from '../Input';
+import { Input } from '../Input'
 import { DropdownList } from '../DropdownList'
 import { Button } from '../Button'
+import { v4 as uuidv4 } from 'uuid';
 import "./Form.css";
 
 export const Form = (props) => {
@@ -10,10 +11,13 @@ export const Form = (props) => {
   const [cargo, setCargo] = useState('')
   const [imagem, setImagem] = useState('')
   const [time, setTime] = useState('')
+  const [nomeTime, setNomeTime] = useState('')
+  const [corTime, setCorTime] = useState('')
   
   const aoSalvar = (evento) => {
     evento.preventDefault()
-    props.aoColaboradorCadastrado({
+    props.aoCadastrar({
+      id: uuidv4(),
       nome,
       cargo,
       imagem,
@@ -23,6 +27,8 @@ export const Form = (props) => {
     setCargo('')
     setImagem('')
     setTime('')
+    setNomeTime('')
+    setCorTime('')
   }
   
   return (
@@ -53,7 +59,7 @@ export const Form = (props) => {
         <DropdownList
           obrigatorio={true}
           label="Time" 
-          itens={props.times}
+          items={props.times}
           valor={time}
           aoAlterado={valor => setTime(valor)}
         />
@@ -61,6 +67,28 @@ export const Form = (props) => {
         <Button>
           Criar Card
         </Button>
+      </form>
+      <form onSubmit={(evento) => {
+        evento.preventDefault()
+        props.aoCriarTime({ nome: nomeTime, cor: corTime })
+            }}>
+        <h2>Preencha os dados para criar um novo time.</h2>
+        <Input
+          obrigatorio={true}
+          label='Nome'
+          placeholder='Digite o nome do time'
+          valor={nomeTime}
+          aoAlterado={valor => setNomeTime(valor)}
+        />
+        <Input
+          obrigatorio={true}
+          label='Cor'
+          type='color'
+          placeholder='Digite sua cor'
+          valor={corTime}
+          aoAlterado={valor => setCorTime(valor)}
+        />
+        <Button>Criar Time</Button>
       </form>
     </section>
   )

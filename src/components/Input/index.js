@@ -1,19 +1,10 @@
 import "./Input.css"
 
-export const Input = (props) => {
-  const aoDigitado = (evento) => {
-    props.aoAlterado(evento.target.value)
-  }
-  
-  return (
-    <div className="div-input">
-      <label>{props.label}</label>
-      <input 
-        value={props.valor} 
-        onChange={aoDigitado}
-        required={props.obrigatorio} 
-        placeholder={props.placeholder} 
-      />
+export const Input = ({ type = 'text', label, placeholder, valor, aoAlterado, obrigatorio = false }) => {
+    return (
+      <div className={`campo campo-${type}`}>
+        <label>{label}</label>
+        <input type={type} value={valor} onChange={evento => aoAlterado(evento.target.value)} required={obrigatorio} placeholder={placeholder}/> 
     </div>
   )
 }
