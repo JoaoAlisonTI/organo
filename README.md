@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+<h2 align="center">Organo</h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+Desenvolvido durante abril/maio de 2024 com foco em fortalecer as habilidades de front-end 🚀⚡. <br/>
+</p>
 
-## Available Scripts
+- [Visão geral](#visão-geral)
+  - [Sobre o projeto](#sobre-o-projeto)
+  - [Screenshots](#screenshots)
+  - [Links](#links)
+- [Meu processo](#meu-processo)
+  - [Tecnologias](#tecnologias)
+  - [Continuar o desenvolvimento](#continuar-o-desenvolvimento)
+  - [Recursos úteis](#recursos-úteis)
+- [Autor ](#autor)
 
-In the project directory, you can run:
 
-### `npm start`
+</br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Visão geral
+### Sobre o projeto
+Challenge proposto na trilha de front-end da turma 6 do ONE onde "basicamente" o aluno deveria contruir um site de portifólio tendo como base o design no figma. Porém eu dei umas modificadas que considerei interessantes em questão de tamanho ou design de alguns elementos. Por enquanto optei por deixar a paleta de cores que foi pré-definida. O site é composto por seções onde cada seção representa uma parte daquilo que compōe um portifólio web.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Screenshots
+<p align="center">
+  <img alt="Tela 1" src="assets/screenshots/print1.jpg" width="100%">
+</p>
+<p align="center">
+  <img alt="Tela 2" src="assets/screenshots/print2.jpg" width="100%">
+</p>
 
-### `npm test`
+### Links
+- [Acesse o projeto finalizado, online ☁️](https://joaoalisonti.github.io/challenge-portifolio-web/)
+- [Acesse o figma do projeto 🖼️](https://www.figma.com/file/Mv4mSxBHzB5caI7bW2tLv6/Challenge-Front-end-Portf%C3%B3lio?type=design&node-id=0-1&mode=design&t=PLKPTTYMVPLt6av4-0)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</br>
 
-### `npm run build`
+## Meu processo
+### Tecnologias
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- HTML
+- CSS
+- JavaScript
+- Trello
+- Git e Github
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Optei pelo basicão mesmo (HTML/CSS) para estruturar e estilizar o site e JavaScript para dar vida em algumas funcionalidades. Para organizar as tasks e o desenvolvimento do projeto eu utilizei o Trello. E para o versionamento de código os bons e velhos amigos Git/Github.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Continuar o desenvolvimento
+Pretendo dá uma limpada no código e futuramente trocar a paleta de cores + um modo dark/light.
 
-### `npm run eject`
+### Recursos úteis
+- [Guia completo de flexbox](https://origamid.com/projetos/flexbox-guia-completo/) - Aprenda a utilizar o flexbox para a criação de layouts responsivos com css.
+- [Conceitos básicos de flexbox](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) - Este artigo fornece um resumo das principais funcionalidades do flexbox.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+</br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Autor
+*JoãoAlisonTI 👨🏽‍💻*
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<strong>2024</strong>
